@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Game</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <script src="./script.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/10.3.0/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/10.3.0/firebase-auth-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-database-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-firestore-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-functions-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-messaging-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-storage-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/10.3.0/firebase-performance-compat.js"></script>
+    <!-- 
+        initialize the SDK after all desired features are loaded, set useEmulator to false
+        to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
+
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <span>คณิต QuizGame</span>
+            <h1>เลือกระดับความยาก</h1>
+            <div class="Level-select">
+                <button onclick="LevelSelect(this.id)" id="Level1" style="background-color:#228B22 ;">ง่ายๆ</button>
+                <button onclick="LevelSelect(this.id)" id="Level2" style="background-color: #DD572A;">ปานกลาง</button>
+                <button onclick="LevelSelect(this.id)" id="Level3" style="background-color: #AB2227;">ยาก</button>
+            </div>
+            <button id="StartQuiz" class="Start-button"><a>เริ่มเกม</a></button>
+        </div>
+    </div>
+</body>
+</html>
